@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+       <title>Produtos</title>
+    </head>
+    <body>
+       <p>Produtos cadastrados</p>
+       <ul>
+          {% for product in product_list %}
+             <li>
+                <b>*</b> {{ product.name }} - {{ product.amount }} {{ product.unity.initials }} <b>R$ {{ product.price }}</b>
+             </li>
+          {% endfor %}
+       </ul>
+    </body>
+</html>
